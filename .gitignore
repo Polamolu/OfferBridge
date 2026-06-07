@@ -1,0 +1,14 @@
+# VS Code
+.vscode/extensions.json
+.DS_Store
+
+# IDE
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+
+# Node modules (if added later)
+node_modules/
