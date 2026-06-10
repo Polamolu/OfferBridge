@@ -12,3 +12,6 @@ Thumbs.db
 
 # Node modules (if added later)
 node_modules/
+
+# Spring Boot backend build output
+backend/target/

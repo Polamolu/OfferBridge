@@ -1,0 +1,502 @@
+:root {
+    --navy: #0a1628;
+    --green: #00d4aa;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--navy);
+    color: #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.navbar {
+    background-color: rgba(10, 22, 40, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 212, 170, 0.1);
+}
+
+.logo-text {
+    color: var(--green);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.tagline-text {
+    color: #a0a0a0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(0, 212, 170, 0.1) 0%, rgba(0, 212, 170, 0.05) 100%);
+}
+
+.hero-headline {
+    font-size: clamp(32px, 8vw, 56px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero-subtext {
+    font-size: clamp(16px, 4vw, 18px);
+    color: #b0b0b0;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.btn-primary {
+    background-color: var(--green);
+    color: var(--navy);
+    font-weight: 600;
+    padding: 12px 32px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--green);
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 212, 170, 0.3);
+    background-color: #00b896;
+    border-color: #00b896;
+}
+
+.input-field {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0, 212, 170, 0.2);
+    color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.1);
+}
+
+.input-field::placeholder {
+    color: #707070;
+}
+
+.problem-card {
+    background: linear-gradient(135deg, rgba(0, 212, 170, 0.05) 0%, rgba(0, 212, 170, 0.02) 100%);
+    border: 1px solid rgba(0, 212, 170, 0.15);
+    padding: 32px 24px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.problem-card:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 170, 0.1) 0%, rgba(0, 212, 170, 0.05) 100%);
+    border-color: rgba(0, 212, 170, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 212, 170, 0.15);
+}
+
+.step-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid rgba(0, 212, 170, 0.2);
+    padding: 36px 28px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.step-card:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 170, 0.08) 0%, rgba(0, 212, 170, 0.03) 100%);
+    border-color: var(--green);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 212, 170, 0.2);
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: var(--green);
+    color: var(--navy);
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.savings-card {
+    background: linear-gradient(135deg, rgba(0, 212, 170, 0.08) 0%, rgba(0, 212, 170, 0.02) 100%);
+    border: 2px solid rgba(0, 212, 170, 0.3);
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.savings-amount {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--green);
+    margin: 16px 0;
+    animation: scaleIn 0.6s ease-out;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, rgba(0, 212, 170, 0.06) 0%, rgba(0, 212, 170, 0.02) 100%);
+    border: 1px solid rgba(0, 212, 170, 0.15);
+    padding: 32px 24px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 170, 0.12) 0%, rgba(0, 212, 170, 0.05) 100%);
+    border-color: var(--green);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 212, 170, 0.15);
+}
+
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: rgba(0, 212, 170, 0.1);
+    color: var(--green);
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-size: 28px;
+}
+
+.card-vault {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 212, 170, 0.04) 100%);
+    border: 1px solid rgba(0, 212, 170, 0.18);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+}
+
+.card-vault-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 1024px) {
+    .card-vault-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+    }
+}
+
+.vault-panel {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.vault-summary {
+    background: radial-gradient(circle at top left, rgba(0, 212, 170, 0.2), rgba(0, 212, 170, 0.06));
+    border: 1px solid rgba(0, 212, 170, 0.2);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.saved-card-list {
+    display: grid;
+    gap: 14px;
+}
+
+.saved-card-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 212, 170, 0.12);
+}
+
+.saved-card-meta {
+    display: grid;
+    gap: 4px;
+}
+
+.saved-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #d6fdf3;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 212, 170, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    border-color: var(--green);
+    background-color: rgba(0, 212, 170, 0.08);
+    transform: translateY(-1px);
+}
+
+.helper-text {
+    color: #95a7b8;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(0, 212, 170, 0.1);
+    border: 1px solid rgba(0, 212, 170, 0.2);
+    color: #bdf8ea;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 0 4px rgba(0, 212, 170, 0.12);
+}
+
+.empty-state {
+    padding: 24px;
+    border-radius: 14px;
+    border: 1px dashed rgba(0, 212, 170, 0.22);
+    color: #98a7b8;
+    background: rgba(255, 255, 255, 0.03);
+    text-align: center;
+}
+
+.toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(0, 212, 170, 0.12);
+    margin-bottom: 24px;
+}
+
+.toggle-copy {
+    display: grid;
+    gap: 4px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.18);
+    transition: 0.25s ease;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 212, 170, 0.18);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #ffffff;
+    transition: 0.25s ease;
+    border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+    background-color: rgba(0, 212, 170, 0.7);
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+.feature-shell {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-8px);
+    overflow: hidden;
+    margin-bottom: 0;
+    pointer-events: none;
+    transition: max-height 0.45s ease, opacity 0.3s ease, transform 0.45s ease;
+    will-change: max-height, opacity, transform;
+}
+
+.feature-shell.is-visible {
+    max-height: 2200px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.feedback-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(0, 212, 170, 0.08);
+    border: 1px solid rgba(0, 212, 170, 0.16);
+    color: #d9fff6;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.section-heading {
+    font-size: clamp(28px, 6vw, 48px);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.section-subheading {
+    color: #a0a0a0;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.waitlist-input-group {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .waitlist-input-group {
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .waitlist-input-group .input-field {
+        flex: 1;
+    }
+
+    .waitlist-input-group .btn-primary {
+        white-space: nowrap;
+    }
+}
+
+.footer {
+    border-top: 1px solid rgba(0, 212, 170, 0.1);
+    background-color: rgba(10, 22, 40, 0.5);
+    padding: 48px 24px 28px;
+}
+
+footer p {
+    color: #808080;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: var(--green);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00b896;
+    text-decoration: underline;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+* {
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .hero-headline {
+        margin-bottom: 20px;
+    }
+
+    .problem-card {
+        min-height: auto;
+        padding: 24px;
+    }
+
+    .savings-amount {
+        font-size: 36px;
+    }
+}
